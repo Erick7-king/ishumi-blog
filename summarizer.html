@@ -37,9 +37,7 @@ padding:15px;
 border-radius:10px;
 min-height:100px;
 }
-</style></head><body><h1>AI Text Summarizer</h1><p>
-Paste a long article below and click Summarize.
-</p><textarea id="input"></textarea><br><button onclick="summarize()">
+</style></head><body><h1>AI Text Summarizer</h1><p>Paste a long article below and click Summarize.</p><textarea id="input"></textarea><br><button onclick="summarize()">
 Summarize
 </button><div id="output">
 Summary will appear here...
@@ -49,14 +47,26 @@ function summarize(){
 let text =
 document.getElementById("input").value;
 
+if(text.length < 50){
+document.getElementById("output").innerHTML =
+"Please enter more text.";
+return;
+}
+
 let sentences =
-text.split(".");
+text.match(/[^.!?]+[.!?]+/g);
+
+if(!sentences){
+document.getElementById("output").innerHTML =
+text;
+return;
+}
 
 let summary =
-sentences.slice(0,3).join(".");
+sentences.slice(0,5).join(" ");
 
-document.getElementById("output")
-.innerHTML = summary;
+document.getElementById("output").innerHTML =
+summary;
 
 }
 </script></body>
