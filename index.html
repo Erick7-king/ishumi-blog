@@ -1,53 +1,78 @@
 <!DOCTYPE html><html>
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Ishumi Blog</title><style>
 body{
-font-family: Arial, sans-serif;
-max-width:900px;
-margin:auto;
-padding:20px;
-background:#f5f5f5;
+margin:0;
+font-family:Arial,sans-serif;
+background:#121212;
+color:white;
 }
 
 header{
-background:#222;
-color:white;
+background:#1e1e1e;
+padding:30px;
+text-align:center;
+}
+
+nav{
+margin-top:15px;
+}
+
+nav a{
+color:#4da6ff;
+text-decoration:none;
+margin:10px;
+}
+
+.container{
+max-width:900px;
+margin:auto;
 padding:20px;
-border-radius:10px;
 }
 
 .card{
-background:white;
-padding:15px;
-margin-top:15px;
-border-radius:10px;
-box-shadow:0 2px 5px rgba(0,0,0,0.1);
+background:#242424;
+padding:20px;
+margin-bottom:20px;
+border-radius:12px;
 }
 
-a{
+.card a{
+color:#4da6ff;
 text-decoration:none;
-color:#0066cc;
 }
 
 footer{
-margin-top:30px;
 text-align:center;
-color:gray;
+padding:20px;
+color:#aaa;
 }
 </style></head>
 <body><header>
 <h1>Ishumi Blog</h1>
-<p>Technology • AWS • Cloudflare • VPS • AI</p>
-</header><div class="card">
+<p>Technology • VPS • AWS • Cloudflare • AI</p><nav>
+<a href="index.html">Home</a>
+<a href="summarizer.html">AI Summarizer</a>
+</nav>
+</header><div class="container"><div class="card">
 <h2>Latest Articles</h2><ul>
 <li><a href="first-post.html">My First Post</a></li>
-<li><a href="cloudflare-guide.html">Cloudflare Guide for Beginners</a></li>
+<li><a href="cloudflare-guide.html">Cloudflare Guide</a></li>
 <li><a href="aws-free-tier.html">AWS Free Tier Guide</a></li>
-<li><a href="vps-basics.html">VPS Basics for Beginners</a></li>
+<li><a href="vps-basics.html">VPS Basics</a></li>
 </ul></div><div class="card">
-<h2>About Ishumi</h2><p>Ishumi Blog shares tutorials about cloud computing, VPS hosting, networking, security, and artificial intelligence.</p>
-</div><footer>
-<p>© 2026 Ishumi Blog</p>
+<h2>About</h2><p>
+Welcome to Ishumi Blog. This website shares tutorials
+about VPS hosting, cloud computing, AWS, Cloudflare,
+networking and artificial intelligence.
+</p></div><div class="card">
+<h2>Featured Tool</h2><p>
+Try our free AI Text Summarizer.
+</p><a href="summarizer.html">
+Open AI Summarizer →
+</a></div></div><footer>
+© 2026 Ishumi Blog
 </footer></body>
 </html>
